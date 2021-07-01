@@ -1,7 +1,7 @@
 
 describe('Ideabox Test', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('https://travis-ci-prac.herokuapp.com/')
     .get('#title').type('To Do')
     .get('#description').type('Go grocery shopping')
     .get('#submitBtn').click()
