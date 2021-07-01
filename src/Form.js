@@ -32,6 +32,7 @@ class Form extends Component {
     return (
       <form>
         <input
+          id='title'
           type='text'
           placeholder='Title'
           name='title'
@@ -40,6 +41,7 @@ class Form extends Component {
         />
 
         <input
+          id='description'
           type='text'
           placeholder='Description'
           name='description'
@@ -47,7 +49,7 @@ class Form extends Component {
           onChange={event => this.handleChange(event)}
         />
 
-        <button onClick={event => this.submitIdea(event)}>SUBMIT</button>
+        <button id='submitBtn' onClick={event => this.submitIdea(event)}>SUBMIT</button>
       </form>
     )
   }
